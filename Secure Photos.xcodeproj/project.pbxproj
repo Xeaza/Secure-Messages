@@ -60,6 +60,8 @@
 		345BB1251A04224A0056330A /* SSKeychainMacTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0F81A04224A0056330A /* SSKeychainMacTests-Info.plist */; };
 		345BB1261A04224A0056330A /* SSKeychainTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0F91A04224A0056330A /* SSKeychainTests-Info.plist */; };
 		345BB1271A04224A0056330A /* SSKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0FA1A04224A0056330A /* SSKeychainTests.m */; };
+		345BB1451A0424E20056330A /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1441A0424E20056330A /* PhotosViewController.m */; };
+		345BB1481A0425280056330A /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1471A0425280056330A /* PhotoCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +214,10 @@
 		345BB0F81A04224A0056330A /* SSKeychainMacTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSKeychainMacTests-Info.plist"; sourceTree = "<group>"; };
 		345BB0F91A04224A0056330A /* SSKeychainTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSKeychainTests-Info.plist"; sourceTree = "<group>"; };
 		345BB0FA1A04224A0056330A /* SSKeychainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainTests.m; sourceTree = "<group>"; };
+		345BB1431A0424E20056330A /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		345BB1441A0424E20056330A /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		345BB1461A0425280056330A /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		345BB1471A0425280056330A /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +264,10 @@
 				345BB0811A041FFE0056330A /* AppDelegate.m */,
 				345BB0831A041FFE0056330A /* ViewController.h */,
 				345BB0841A041FFE0056330A /* ViewController.m */,
+				345BB1431A0424E20056330A /* PhotosViewController.h */,
+				345BB1441A0424E20056330A /* PhotosViewController.m */,
+				345BB1461A0425280056330A /* PhotoCollectionViewCell.h */,
+				345BB1471A0425280056330A /* PhotoCollectionViewCell.m */,
 				345BB0861A041FFE0056330A /* Main.storyboard */,
 				345BB0891A041FFE0056330A /* Images.xcassets */,
 				345BB08B1A041FFE0056330A /* LaunchScreen.xib */,
@@ -712,6 +722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				345BB0851A041FFE0056330A /* ViewController.m in Sources */,
+				345BB1481A0425280056330A /* PhotoCollectionViewCell.m in Sources */,
 				345BB1041A04224A0056330A /* RNCryptor.m in Sources */,
 				345BB1131A04224A0056330A /* RNOpenSSLTests.m in Sources */,
 				345BB1121A04224A0056330A /* RNCryptorTests.m in Sources */,
@@ -719,6 +730,7 @@
 				345BB0821A041FFE0056330A /* AppDelegate.m in Sources */,
 				345BB1191A04224A0056330A /* SSAppDelegate.m in Sources */,
 				345BB10F1A04224A0056330A /* README.md in Sources */,
+				345BB1451A0424E20056330A /* PhotosViewController.m in Sources */,
 				345BB1141A04224A0056330A /* XCTestCase+RNCryptorVectorTests.m in Sources */,
 				345BB1271A04224A0056330A /* SSKeychainTests.m in Sources */,
 				345BB1051A04224A0056330A /* RNCryptorEngine.m in Sources */,
