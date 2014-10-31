@@ -10,4 +10,8 @@
 
 @interface PhotosViewController : UICollectionViewController
 
+@property (copy, nonatomic) NSString *username;
+
+- (IBAction)photo:(id)sender;
+
 @end

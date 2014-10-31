@@ -95,4 +95,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+- (IBAction)photo:(id)sender {
+}
 @end

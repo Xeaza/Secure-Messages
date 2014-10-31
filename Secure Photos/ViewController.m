@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SSKeychain.h"
+#import "AppDelegate.h"
+#import "PhotosViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -24,4 +27,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onLoginButtonPressed:(id)sender {
+}
 @end
