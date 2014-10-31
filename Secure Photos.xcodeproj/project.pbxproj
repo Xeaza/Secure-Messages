@@ -14,6 +14,52 @@
 		345BB08A1A041FFE0056330A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0891A041FFE0056330A /* Images.xcassets */; };
 		345BB08D1A041FFE0056330A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345BB08B1A041FFE0056330A /* LaunchScreen.xib */; };
 		345BB0991A041FFE0056330A /* Secure_PhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0981A041FFE0056330A /* Secure_PhotosTests.m */; };
+		345BB0A31A04205F0056330A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BB0A21A04205F0056330A /* MobileCoreServices.framework */; };
+		345BB0FB1A04224A0056330A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0A51A04224A0056330A /* .gitignore */; };
+		345BB0FC1A04224A0056330A /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0A61A04224A0056330A /* .gitmodules */; };
+		345BB0FD1A04224A0056330A /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0A71A04224A0056330A /* .travis.yml */; };
+		345BB0FE1A04224A0056330A /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0A81A04224A0056330A /* AppledocSettings.plist */; };
+		345BB0FF1A04224A0056330A /* Changelog.md in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0A91A04224A0056330A /* Changelog.md */; };
+		345BB1001A04224A0056330A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0AA1A04224A0056330A /* README.md */; };
+		345BB1011A04224A0056330A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0AC1A04224A0056330A /* main.m */; };
+		345BB1021A04224A0056330A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0AE1A04224A0056330A /* main.m */; };
+		345BB1031A04224A0056330A /* rncrypt.1 in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0B01A04224A0056330A /* rncrypt.1 */; };
+		345BB1041A04224A0056330A /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0B91A04224A0056330A /* RNCryptor.m */; };
+		345BB1051A04224A0056330A /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0BB1A04224A0056330A /* RNCryptorEngine.m */; };
+		345BB1061A04224A0056330A /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0BD1A04224A0056330A /* RNDecryptor.m */; };
+		345BB1071A04224A0056330A /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0BF1A04224A0056330A /* RNEncryptor.m */; };
+		345BB1081A04224A0056330A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0C11A04224A0056330A /* InfoPlist.strings */; };
+		345BB1091A04224A0056330A /* RNCryptor OS X-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0C31A04224A0056330A /* RNCryptor OS X-Info.plist */; };
+		345BB10A1A04224A0056330A /* RNCryptor.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0C51A04224A0056330A /* RNCryptor.podspec */; };
+		345BB10B1A04224A0056330A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0CA1A04224A0056330A /* InfoPlist.strings */; };
+		345BB10C1A04224A0056330A /* RNCryptorGeneratedVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0CD1A04224A0056330A /* RNCryptorGeneratedVectorTests.m */; };
+		345BB10D1A04224A0056330A /* GenVectorTests in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0CE1A04224A0056330A /* GenVectorTests */; };
+		345BB10E1A04224A0056330A /* openssl.enc in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0CF1A04224A0056330A /* openssl.enc */; };
+		345BB10F1A04224A0056330A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0D01A04224A0056330A /* README.md */; };
+		345BB1101A04224A0056330A /* RNCryptorTestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0D21A04224A0056330A /* RNCryptorTestHelpers.m */; };
+		345BB1111A04224A0056330A /* RNCryptorTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0D31A04224A0056330A /* RNCryptorTests-Info.plist */; };
+		345BB1121A04224A0056330A /* RNCryptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0D41A04224A0056330A /* RNCryptorTests.m */; };
+		345BB1131A04224A0056330A /* RNOpenSSLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0D61A04224A0056330A /* RNOpenSSLTests.m */; };
+		345BB1141A04224A0056330A /* XCTestCase+RNCryptorVectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0D81A04224A0056330A /* XCTestCase+RNCryptorVectorTests.m */; };
+		345BB1151A04224A0056330A /* RNCryptorV1.enc in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0D91A04224A0056330A /* RNCryptorV1.enc */; };
+		345BB1161A04224A0056330A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0DC1A04224A0056330A /* .gitignore */; };
+		345BB1171A04224A0056330A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0DF1A04224A0056330A /* Images.xcassets */; };
+		345BB1181A04224A0056330A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0E01A04224A0056330A /* main.m */; };
+		345BB1191A04224A0056330A /* SSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0E21A04224A0056330A /* SSAppDelegate.m */; };
+		345BB11A1A04224A0056330A /* SSKeychain-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0E31A04224A0056330A /* SSKeychain-Info.plist */; };
+		345BB11B1A04224A0056330A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0E51A04224A0056330A /* MainMenu.xib */; };
+		345BB11C1A04224A0056330A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0E71A04224A0056330A /* main.m */; };
+		345BB11D1A04224A0056330A /* SSKeychainMac-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0E81A04224A0056330A /* SSKeychainMac-Info.plist */; };
+		345BB11E1A04224A0056330A /* SSKeychainMac.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0E91A04224A0056330A /* SSKeychainMac.entitlements */; };
+		345BB11F1A04224A0056330A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0EA1A04224A0056330A /* LICENSE */; };
+		345BB1201A04224A0056330A /* Readme.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0EB1A04224A0056330A /* Readme.markdown */; };
+		345BB1211A04224A0056330A /* SSKeychain.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0ED1A04224A0056330A /* SSKeychain.strings */; };
+		345BB1221A04224A0056330A /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0F01A04224A0056330A /* SSKeychain.m */; };
+		345BB1231A04224A0056330A /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0F21A04224A0056330A /* SSKeychainQuery.m */; };
+		345BB1241A04224A0056330A /* SSKeychain.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0F31A04224A0056330A /* SSKeychain.podspec */; };
+		345BB1251A04224A0056330A /* SSKeychainMacTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0F81A04224A0056330A /* SSKeychainMacTests-Info.plist */; };
+		345BB1261A04224A0056330A /* SSKeychainTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 345BB0F91A04224A0056330A /* SSKeychainTests-Info.plist */; };
+		345BB1271A04224A0056330A /* SSKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0FA1A04224A0056330A /* SSKeychainTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +69,69 @@
 			proxyType = 1;
 			remoteGlobalIDString = 345BB0781A041FFE0056330A;
 			remoteInfo = "Secure Photos";
+		};
+		345BB1291A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0B21A04224A0056330A /* rncrypt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBB08CAE16B8ABB600E7E968;
+			remoteInfo = rncrypt;
+		};
+		345BB12F1A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB7564F01512D3C4007B806B;
+			remoteInfo = RNCryptor;
+		};
+		345BB1311A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB13427A15E0FC2300456914;
+			remoteInfo = "RNCryptor OS X";
+		};
+		345BB1331A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB7565001512D3C4007B806B;
+			remoteInfo = RNCryptorTests;
+		};
+		345BB1351A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FB6AC68C16F6704100CA0C0A;
+			remoteInfo = rncrypt;
+		};
+		345BB13B1A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21CC42A717DB874300201DDC;
+			remoteInfo = SSKeychain;
+		};
+		345BB13D1A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21CC42C217DB874300201DDC;
+			remoteInfo = SSKeychainTests;
+		};
+		345BB13F1A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21B85B2418EC9455009D2B98;
+			remoteInfo = SSKeychainMac;
+		};
+		345BB1411A04224A0056330A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 21B85B4318EC9456009D2B98;
+			remoteInfo = SSKeychainMacTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +149,69 @@
 		345BB0921A041FFE0056330A /* Secure PhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Secure PhotosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		345BB0971A041FFE0056330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345BB0981A041FFE0056330A /* Secure_PhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Secure_PhotosTests.m; sourceTree = "<group>"; };
+		345BB0A21A04205F0056330A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		345BB0A51A04224A0056330A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		345BB0A61A04224A0056330A /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		345BB0A71A04224A0056330A /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		345BB0A81A04224A0056330A /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		345BB0A91A04224A0056330A /* Changelog.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Changelog.md; sourceTree = "<group>"; };
+		345BB0AA1A04224A0056330A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		345BB0AC1A04224A0056330A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345BB0AE1A04224A0056330A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345BB0AF1A04224A0056330A /* rncrypt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rncrypt-Prefix.pch"; sourceTree = "<group>"; };
+		345BB0B01A04224A0056330A /* rncrypt.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = rncrypt.1; sourceTree = "<group>"; };
+		345BB0B11A04224A0056330A /* rncrypt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rncrypt-Prefix.pch"; sourceTree = "<group>"; };
+		345BB0B21A04224A0056330A /* rncrypt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = rncrypt.xcodeproj; sourceTree = "<group>"; };
+		345BB0B61A04224A0056330A /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		345BB0B71A04224A0056330A /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		345BB0B81A04224A0056330A /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		345BB0B91A04224A0056330A /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		345BB0BA1A04224A0056330A /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		345BB0BB1A04224A0056330A /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		345BB0BC1A04224A0056330A /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		345BB0BD1A04224A0056330A /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		345BB0BE1A04224A0056330A /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		345BB0BF1A04224A0056330A /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		345BB0C21A04224A0056330A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		345BB0C31A04224A0056330A /* RNCryptor OS X-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RNCryptor OS X-Info.plist"; sourceTree = "<group>"; };
+		345BB0C41A04224A0056330A /* RNCryptor OS X-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor OS X-Prefix.pch"; sourceTree = "<group>"; };
+		345BB0C51A04224A0056330A /* RNCryptor.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RNCryptor.podspec; sourceTree = "<group>"; };
+		345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RNCryptor.xcodeproj; sourceTree = "<group>"; };
+		345BB0CB1A04224A0056330A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		345BB0CD1A04224A0056330A /* RNCryptorGeneratedVectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorGeneratedVectorTests.m; sourceTree = "<group>"; };
+		345BB0CE1A04224A0056330A /* GenVectorTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GenVectorTests; sourceTree = "<group>"; };
+		345BB0CF1A04224A0056330A /* openssl.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openssl.enc; sourceTree = "<group>"; };
+		345BB0D01A04224A0056330A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		345BB0D11A04224A0056330A /* RNCryptorTestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorTestHelpers.h; sourceTree = "<group>"; };
+		345BB0D21A04224A0056330A /* RNCryptorTestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorTestHelpers.m; sourceTree = "<group>"; };
+		345BB0D31A04224A0056330A /* RNCryptorTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RNCryptorTests-Info.plist"; sourceTree = "<group>"; };
+		345BB0D41A04224A0056330A /* RNCryptorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorTests.m; sourceTree = "<group>"; };
+		345BB0D61A04224A0056330A /* RNOpenSSLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLTests.m; sourceTree = "<group>"; };
+		345BB0D71A04224A0056330A /* XCTestCase+RNCryptorVectorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCTestCase+RNCryptorVectorTests.h"; sourceTree = "<group>"; };
+		345BB0D81A04224A0056330A /* XCTestCase+RNCryptorVectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+RNCryptorVectorTests.m"; sourceTree = "<group>"; };
+		345BB0D91A04224A0056330A /* RNCryptorV1.enc */ = {isa = PBXFileReference; lastKnownFileType = file; path = RNCryptorV1.enc; sourceTree = "<group>"; };
+		345BB0DC1A04224A0056330A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		345BB0DF1A04224A0056330A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		345BB0E01A04224A0056330A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345BB0E11A04224A0056330A /* SSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAppDelegate.h; sourceTree = "<group>"; };
+		345BB0E21A04224A0056330A /* SSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAppDelegate.m; sourceTree = "<group>"; };
+		345BB0E31A04224A0056330A /* SSKeychain-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSKeychain-Info.plist"; sourceTree = "<group>"; };
+		345BB0E61A04224A0056330A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		345BB0E71A04224A0056330A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		345BB0E81A04224A0056330A /* SSKeychainMac-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSKeychainMac-Info.plist"; sourceTree = "<group>"; };
+		345BB0E91A04224A0056330A /* SSKeychainMac.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SSKeychainMac.entitlements; sourceTree = "<group>"; };
+		345BB0EA1A04224A0056330A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		345BB0EB1A04224A0056330A /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.markdown; sourceTree = "<group>"; };
+		345BB0EE1A04224A0056330A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSKeychain.strings; sourceTree = "<group>"; };
+		345BB0EF1A04224A0056330A /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		345BB0F01A04224A0056330A /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		345BB0F11A04224A0056330A /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		345BB0F21A04224A0056330A /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		345BB0F31A04224A0056330A /* SSKeychain.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSKeychain.podspec; sourceTree = "<group>"; };
+		345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SSKeychain.xcodeproj; sourceTree = "<group>"; };
+		345BB0F81A04224A0056330A /* SSKeychainMacTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSKeychainMacTests-Info.plist"; sourceTree = "<group>"; };
+		345BB0F91A04224A0056330A /* SSKeychainTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSKeychainTests-Info.plist"; sourceTree = "<group>"; };
+		345BB0FA1A04224A0056330A /* SSKeychainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345BB0A31A04205F0056330A /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +269,9 @@
 		345BB07C1A041FFE0056330A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				345BB0A21A04205F0056330A /* MobileCoreServices.framework */,
+				345BB0A41A04224A0056330A /* RNCryptor 10:31:2014 */,
+				345BB0DB1A04224A0056330A /* sskeychain 10:31:2014 */,
 				345BB07D1A041FFE0056330A /* Info.plist */,
 				345BB07E1A041FFE0056330A /* main.m */,
 			);
@@ -117,6 +293,218 @@
 				345BB0971A041FFE0056330A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		345BB0A41A04224A0056330A /* RNCryptor 10:31:2014 */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0A51A04224A0056330A /* .gitignore */,
+				345BB0A61A04224A0056330A /* .gitmodules */,
+				345BB0A71A04224A0056330A /* .travis.yml */,
+				345BB0A81A04224A0056330A /* AppledocSettings.plist */,
+				345BB0A91A04224A0056330A /* Changelog.md */,
+				345BB0AA1A04224A0056330A /* README.md */,
+				345BB0AB1A04224A0056330A /* rncrypt */,
+				345BB0B51A04224A0056330A /* RNCryptor */,
+				345BB0C01A04224A0056330A /* RNCryptor OS X */,
+				345BB0C51A04224A0056330A /* RNCryptor.podspec */,
+				345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */,
+				345BB0C91A04224A0056330A /* RNCryptorTests */,
+				345BB0D91A04224A0056330A /* RNCryptorV1.enc */,
+				345BB0DA1A04224A0056330A /* Spec */,
+			);
+			name = "RNCryptor 10:31:2014";
+			path = "RNCryptor - Downloaded 10:31:2014";
+			sourceTree = "<group>";
+		};
+		345BB0AB1A04224A0056330A /* rncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0AC1A04224A0056330A /* main.m */,
+				345BB0AD1A04224A0056330A /* rncrypt */,
+				345BB0B11A04224A0056330A /* rncrypt-Prefix.pch */,
+				345BB0B21A04224A0056330A /* rncrypt.xcodeproj */,
+			);
+			path = rncrypt;
+			sourceTree = "<group>";
+		};
+		345BB0AD1A04224A0056330A /* rncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0AE1A04224A0056330A /* main.m */,
+				345BB0AF1A04224A0056330A /* rncrypt-Prefix.pch */,
+				345BB0B01A04224A0056330A /* rncrypt.1 */,
+			);
+			path = rncrypt;
+			sourceTree = "<group>";
+		};
+		345BB0B31A04224A0056330A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345BB12A1A04224A0056330A /* rncrypt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		345BB0B51A04224A0056330A /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0B61A04224A0056330A /* RNCryptor+Private.h */,
+				345BB0B71A04224A0056330A /* RNCryptor-Prefix.pch */,
+				345BB0B81A04224A0056330A /* RNCryptor.h */,
+				345BB0B91A04224A0056330A /* RNCryptor.m */,
+				345BB0BA1A04224A0056330A /* RNCryptorEngine.h */,
+				345BB0BB1A04224A0056330A /* RNCryptorEngine.m */,
+				345BB0BC1A04224A0056330A /* RNDecryptor.h */,
+				345BB0BD1A04224A0056330A /* RNDecryptor.m */,
+				345BB0BE1A04224A0056330A /* RNEncryptor.h */,
+				345BB0BF1A04224A0056330A /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		345BB0C01A04224A0056330A /* RNCryptor OS X */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0C11A04224A0056330A /* InfoPlist.strings */,
+				345BB0C31A04224A0056330A /* RNCryptor OS X-Info.plist */,
+				345BB0C41A04224A0056330A /* RNCryptor OS X-Prefix.pch */,
+			);
+			path = "RNCryptor OS X";
+			sourceTree = "<group>";
+		};
+		345BB0C71A04224A0056330A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345BB1301A04224A0056330A /* libRNCryptor.a */,
+				345BB1321A04224A0056330A /* RNCryptor.framework */,
+				345BB1341A04224A0056330A /* RNCryptorTests.xctest */,
+				345BB1361A04224A0056330A /* rncrypt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		345BB0C91A04224A0056330A /* RNCryptorTests */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0CA1A04224A0056330A /* InfoPlist.strings */,
+				345BB0CC1A04224A0056330A /* Generated */,
+				345BB0CE1A04224A0056330A /* GenVectorTests */,
+				345BB0CF1A04224A0056330A /* openssl.enc */,
+				345BB0D01A04224A0056330A /* README.md */,
+				345BB0D11A04224A0056330A /* RNCryptorTestHelpers.h */,
+				345BB0D21A04224A0056330A /* RNCryptorTestHelpers.m */,
+				345BB0D31A04224A0056330A /* RNCryptorTests-Info.plist */,
+				345BB0D41A04224A0056330A /* RNCryptorTests.m */,
+				345BB0D51A04224A0056330A /* RNOpenSSLCryptor */,
+				345BB0D71A04224A0056330A /* XCTestCase+RNCryptorVectorTests.h */,
+				345BB0D81A04224A0056330A /* XCTestCase+RNCryptorVectorTests.m */,
+			);
+			path = RNCryptorTests;
+			sourceTree = "<group>";
+		};
+		345BB0CC1A04224A0056330A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0CD1A04224A0056330A /* RNCryptorGeneratedVectorTests.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		345BB0D51A04224A0056330A /* RNOpenSSLCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0D61A04224A0056330A /* RNOpenSSLTests.m */,
+			);
+			path = RNOpenSSLCryptor;
+			sourceTree = "<group>";
+		};
+		345BB0DA1A04224A0056330A /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		345BB0DB1A04224A0056330A /* sskeychain 10:31:2014 */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0DC1A04224A0056330A /* .gitignore */,
+				345BB0DD1A04224A0056330A /* Example */,
+				345BB0EA1A04224A0056330A /* LICENSE */,
+				345BB0EB1A04224A0056330A /* Readme.markdown */,
+				345BB0EC1A04224A0056330A /* SSKeychain */,
+				345BB0F31A04224A0056330A /* SSKeychain.podspec */,
+				345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */,
+				345BB0F71A04224A0056330A /* Tests */,
+			);
+			name = "sskeychain 10:31:2014";
+			path = "sskeychain - Downloaded 10:31:2014";
+			sourceTree = "<group>";
+		};
+		345BB0DD1A04224A0056330A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0DE1A04224A0056330A /* iOS */,
+				345BB0E41A04224A0056330A /* Mac */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		345BB0DE1A04224A0056330A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0DF1A04224A0056330A /* Images.xcassets */,
+				345BB0E01A04224A0056330A /* main.m */,
+				345BB0E11A04224A0056330A /* SSAppDelegate.h */,
+				345BB0E21A04224A0056330A /* SSAppDelegate.m */,
+				345BB0E31A04224A0056330A /* SSKeychain-Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		345BB0E41A04224A0056330A /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0E51A04224A0056330A /* MainMenu.xib */,
+				345BB0E71A04224A0056330A /* main.m */,
+				345BB0E81A04224A0056330A /* SSKeychainMac-Info.plist */,
+				345BB0E91A04224A0056330A /* SSKeychainMac.entitlements */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		345BB0EC1A04224A0056330A /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0ED1A04224A0056330A /* SSKeychain.strings */,
+				345BB0EF1A04224A0056330A /* SSKeychain.h */,
+				345BB0F01A04224A0056330A /* SSKeychain.m */,
+				345BB0F11A04224A0056330A /* SSKeychainQuery.h */,
+				345BB0F21A04224A0056330A /* SSKeychainQuery.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		345BB0F51A04224A0056330A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				345BB13C1A04224A0056330A /* SSKeychain.app */,
+				345BB13E1A04224A0056330A /* SSKeychainTests.xctest */,
+				345BB1401A04224A0056330A /* SSKeychainMac.app */,
+				345BB1421A04224A0056330A /* SSKeychainMacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		345BB0F71A04224A0056330A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				345BB0F81A04224A0056330A /* SSKeychainMacTests-Info.plist */,
+				345BB0F91A04224A0056330A /* SSKeychainTests-Info.plist */,
+				345BB0FA1A04224A0056330A /* SSKeychainTests.m */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +574,20 @@
 			mainGroup = 345BB0701A041FFE0056330A;
 			productRefGroup = 345BB07A1A041FFE0056330A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 345BB0B31A04224A0056330A /* Products */;
+					ProjectRef = 345BB0B21A04224A0056330A /* rncrypt.xcodeproj */;
+				},
+				{
+					ProductGroup = 345BB0C71A04224A0056330A /* Products */;
+					ProjectRef = 345BB0C61A04224A0056330A /* RNCryptor.xcodeproj */;
+				},
+				{
+					ProductGroup = 345BB0F51A04224A0056330A /* Products */;
+					ProjectRef = 345BB0F41A04224A0056330A /* SSKeychain.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				345BB0781A041FFE0056330A /* Secure Photos */,
@@ -194,14 +596,104 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		345BB12A1A04224A0056330A /* rncrypt */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rncrypt;
+			remoteRef = 345BB1291A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB1301A04224A0056330A /* libRNCryptor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCryptor.a;
+			remoteRef = 345BB12F1A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB1321A04224A0056330A /* RNCryptor.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RNCryptor.framework;
+			remoteRef = 345BB1311A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB1341A04224A0056330A /* RNCryptorTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RNCryptorTests.xctest;
+			remoteRef = 345BB1331A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB1361A04224A0056330A /* rncrypt */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rncrypt;
+			remoteRef = 345BB1351A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB13C1A04224A0056330A /* SSKeychain.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SSKeychain.app;
+			remoteRef = 345BB13B1A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB13E1A04224A0056330A /* SSKeychainTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SSKeychainTests.xctest;
+			remoteRef = 345BB13D1A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB1401A04224A0056330A /* SSKeychainMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SSKeychainMac.app;
+			remoteRef = 345BB13F1A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		345BB1421A04224A0056330A /* SSKeychainMacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SSKeychainMacTests.xctest;
+			remoteRef = 345BB1411A04224A0056330A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		345BB0771A041FFE0056330A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345BB1251A04224A0056330A /* SSKeychainMacTests-Info.plist in Resources */,
+				345BB10A1A04224A0056330A /* RNCryptor.podspec in Resources */,
+				345BB10B1A04224A0056330A /* InfoPlist.strings in Resources */,
+				345BB0FD1A04224A0056330A /* .travis.yml in Resources */,
+				345BB0FB1A04224A0056330A /* .gitignore in Resources */,
+				345BB1161A04224A0056330A /* .gitignore in Resources */,
+				345BB11D1A04224A0056330A /* SSKeychainMac-Info.plist in Resources */,
+				345BB1031A04224A0056330A /* rncrypt.1 in Resources */,
+				345BB0FE1A04224A0056330A /* AppledocSettings.plist in Resources */,
+				345BB1261A04224A0056330A /* SSKeychainTests-Info.plist in Resources */,
 				345BB0881A041FFE0056330A /* Main.storyboard in Resources */,
+				345BB11A1A04224A0056330A /* SSKeychain-Info.plist in Resources */,
+				345BB0FC1A04224A0056330A /* .gitmodules in Resources */,
+				345BB11E1A04224A0056330A /* SSKeychainMac.entitlements in Resources */,
+				345BB1171A04224A0056330A /* Images.xcassets in Resources */,
+				345BB11F1A04224A0056330A /* LICENSE in Resources */,
+				345BB11B1A04224A0056330A /* MainMenu.xib in Resources */,
 				345BB08D1A041FFE0056330A /* LaunchScreen.xib in Resources */,
+				345BB1081A04224A0056330A /* InfoPlist.strings in Resources */,
 				345BB08A1A041FFE0056330A /* Images.xcassets in Resources */,
+				345BB1111A04224A0056330A /* RNCryptorTests-Info.plist in Resources */,
+				345BB10E1A04224A0056330A /* openssl.enc in Resources */,
+				345BB1241A04224A0056330A /* SSKeychain.podspec in Resources */,
+				345BB1211A04224A0056330A /* SSKeychain.strings in Resources */,
+				345BB1151A04224A0056330A /* RNCryptorV1.enc in Resources */,
+				345BB10D1A04224A0056330A /* GenVectorTests in Resources */,
+				345BB1091A04224A0056330A /* RNCryptor OS X-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +712,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				345BB0851A041FFE0056330A /* ViewController.m in Sources */,
+				345BB1041A04224A0056330A /* RNCryptor.m in Sources */,
+				345BB1131A04224A0056330A /* RNOpenSSLTests.m in Sources */,
+				345BB1121A04224A0056330A /* RNCryptorTests.m in Sources */,
+				345BB10C1A04224A0056330A /* RNCryptorGeneratedVectorTests.m in Sources */,
 				345BB0821A041FFE0056330A /* AppDelegate.m in Sources */,
+				345BB1191A04224A0056330A /* SSAppDelegate.m in Sources */,
+				345BB10F1A04224A0056330A /* README.md in Sources */,
+				345BB1141A04224A0056330A /* XCTestCase+RNCryptorVectorTests.m in Sources */,
+				345BB1271A04224A0056330A /* SSKeychainTests.m in Sources */,
+				345BB1051A04224A0056330A /* RNCryptorEngine.m in Sources */,
+				345BB11C1A04224A0056330A /* main.m in Sources */,
+				345BB1061A04224A0056330A /* RNDecryptor.m in Sources */,
+				345BB1001A04224A0056330A /* README.md in Sources */,
 				345BB07F1A041FFE0056330A /* main.m in Sources */,
+				345BB1101A04224A0056330A /* RNCryptorTestHelpers.m in Sources */,
+				345BB1201A04224A0056330A /* Readme.markdown in Sources */,
+				345BB1011A04224A0056330A /* main.m in Sources */,
+				345BB1071A04224A0056330A /* RNEncryptor.m in Sources */,
+				345BB1021A04224A0056330A /* main.m in Sources */,
+				345BB1221A04224A0056330A /* SSKeychain.m in Sources */,
+				345BB1181A04224A0056330A /* main.m in Sources */,
+				345BB0FF1A04224A0056330A /* Changelog.md in Sources */,
+				345BB1231A04224A0056330A /* SSKeychainQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +771,38 @@
 				345BB08C1A041FFE0056330A /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		345BB0C11A04224A0056330A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345BB0C21A04224A0056330A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		345BB0CA1A04224A0056330A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345BB0CB1A04224A0056330A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		345BB0E51A04224A0056330A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345BB0E61A04224A0056330A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		345BB0ED1A04224A0056330A /* SSKeychain.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345BB0EE1A04224A0056330A /* en */,
+			);
+			name = SSKeychain.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
