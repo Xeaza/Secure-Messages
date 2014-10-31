@@ -52,7 +52,8 @@
     }
 }
 
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
     switch (buttonIndex) {
         case 0:
             break;
@@ -62,6 +63,22 @@
         default:
             break;
     }
+}
+
+- (void)createAccount
+{
+    BOOL result = [SSKeychain setPassword:self.passwordTextField.text forService:@"MyPhotos" account:self.usernameTextField.text];
+
+    if (result) {
+        [self performSegueWithIdentifier:@"photosViewController" sender:nil];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PhotosViewController *photosViewController = segue.destinationViewController;
+    photosViewController.username = self.usernameTextField.text;
+    self.passwordTextField.text = nil;
 }
 
 

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XqF-1U-5Pe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -79,19 +78,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tbl-6w-4MI">
-                                <rect key="frame" x="154" y="156" width="293" height="287"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Tbl-6w-4MI" secondAttribute="height" multiplier="293:287" id="9al-UI-egs"/>
-                                </constraints>
-                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FnO-F4-zye">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BqB-bK-yK3">
+                                    <size key="itemSize" width="175" height="145"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="e9u-M3-kGq" customClass="PhotoCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="175" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BCF-cz-pcJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="145"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="BCF-cz-pcJ" firstAttribute="top" secondItem="e9u-M3-kGq" secondAttribute="top" id="fO0-wq-kOo"/>
+                                            <constraint firstItem="BCF-cz-pcJ" firstAttribute="leading" secondItem="e9u-M3-kGq" secondAttribute="leading" id="fiB-cd-vjw"/>
+                                            <constraint firstAttribute="bottom" secondItem="BCF-cz-pcJ" secondAttribute="bottom" id="gh0-26-tYR"/>
+                                            <constraint firstAttribute="trailing" secondItem="BCF-cz-pcJ" secondAttribute="trailing" id="ytl-8s-fNp"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="BCF-cz-pcJ" id="04y-yi-5Kk"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rr3-Fl-202" id="zI5-72-Piq"/>
+                                    <outlet property="delegate" destination="Rr3-Fl-202" id="MUz-GX-tFt"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Tbl-6w-4MI" firstAttribute="top" secondItem="AFR-a6-bZx" secondAttribute="bottom" constant="92" id="9e4-TE-Lsz"/>
-                            <constraint firstAttribute="centerY" secondItem="Tbl-6w-4MI" secondAttribute="centerY" id="mxH-Cm-exw"/>
-                            <constraint firstAttribute="centerX" secondItem="Tbl-6w-4MI" secondAttribute="centerX" id="tDH-mA-2Wl"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K8p-Zs-HXl">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="fyr-0D-m7a">
