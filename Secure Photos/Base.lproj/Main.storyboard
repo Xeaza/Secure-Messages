@@ -28,6 +28,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onLoginButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hGS-b6-7D7"/>
                                     <segue destination="Rr3-Fl-202" kind="show" identifier="photosViewController" id="bU6-zq-VkZ"/>
                                 </connections>
                             </button>
