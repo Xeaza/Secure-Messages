@@ -7,8 +7,16 @@
 //
 
 #import "PhotosViewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface PhotosViewController ()
+#import "RNDecryptor.h"
+#import "RNEncryptor.h"
+#import "PhotoCollectionViewCell.h"
+
+@interface PhotosViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (strong, nonatomic) NSMutableArray *photos;
+@property (copy, nonatomic) NSString *filePath;
 
 @end
 
@@ -21,11 +29,127 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+    [self setupUserDirectory];
+    [self prepareData];
+
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
+}
+
+- (void)setupUserDirectory
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documents = [paths objectAtIndex:0];
+    self.filePath = [documents stringByAppendingPathComponent:self.username];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    if ([fileManager fileExistsAtPath:self.filePath]) {
+        NSLog(@"Directory already present.");
+
+    } else {
+        NSError *error = nil;
+        [fileManager createDirectoryAtPath:self.filePath withIntermediateDirectories:YES attributes:nil error:&error];
+
+        if (error) {
+            NSLog(@"Unable to create directory for user.");
+        }
+    }
+}
+
+- (void)prepareData
+{
+    self.photos = [[NSMutableArray alloc] init];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    NSError *error = nil;
+    NSArray *contents = [fileManager contentsOfDirectoryAtPath:self.filePath error:&error];
+
+    if ([contents count] && !error){
+        NSLog(@"Contents of the user's directory. %@", contents);
+
+        for (NSString *fileName in contents) {
+            if ([fileName rangeOfString:@".securedData"].length > 0) {
+                NSData *data = [NSData dataWithContentsOfFile:[self.filePath stringByAppendingPathComponent:fileName]];
+                NSData *decryptedData = [RNDecryptor decryptData:data withSettings:kRNCryptorAES256Settings password:@"A_SECRET_PASSWORD" error:nil];
+                UIImage *image = [UIImage imageWithData:decryptedData];
+                [self.photos addObject:image];
+
+            } else {
+                NSLog(@"This file is not secured.");
+            }
+        }
+
+    } else if (![contents count]) {
+        if (error) {
+            NSLog(@"Unable to read the contents of the user's directory.");
+        } else {
+            NSLog(@"The user's directory is empty.");
+        }
+    }
+}
+
+- (IBAction)photo:(id)sender
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"Select Source" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo Library", nil];
+    [actionSheet showFromBarButtonItem:sender animated:YES];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex < 2)
+    {
+        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+        imagePickerController.mediaTypes = @[(__bridge NSString *)kUTTypeImage];
+        imagePickerController.allowsEditing = YES;
+        imagePickerController.delegate = self;
+
+        if (buttonIndex == 0)
+        {
+            #if TARGET_IPHONE_SIMULATOR
+
+            #else
+            imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            #endif
+
+        } else if ( buttonIndex == 1) {
+            imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        }
+
+        [self.navigationController presentViewController:imagePickerController animated:YES completion:nil];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = [info objectForKey: UIImagePickerControllerEditedImage];
+
+    if (!image) {
+        [info objectForKey: UIImagePickerControllerOriginalImage];
+    }
+
+    NSData *imageData = UIImagePNGRepresentation(image);
+    NSString *imageName = [NSString stringWithFormat:@"image-%lu.securedData", self.photos.count + 1];
+    NSData *encryptedImage = [RNEncryptor encryptData:imageData withSettings:kRNCryptorAES256Settings password:@"A_SECRET_PASSWORD" error:nil];
+    [encryptedImage writeToFile:[self.filePath stringByAppendingPathComponent:imageName] atomically:YES];
+    [self.photos addObject:image];
+    [self.collectionView reloadData];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark <UICollectionViewDataSource>
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.photos ? self.photos.count : 0;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
+    cell.imageView.image = [self.photos objectAtIndex:indexPath.row];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,68 +157,4 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-#pragma mark <UICollectionViewDataSource>
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
-    return 0;
-}
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete method implementation -- Return the number of items in the section
-    return 0;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
-    return cell;
-}
-
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
-
-- (IBAction)photo:(id)sender {
-}
 @end
