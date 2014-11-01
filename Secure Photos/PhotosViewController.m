@@ -11,31 +11,26 @@
 
 #import "RNDecryptor.h"
 #import "RNEncryptor.h"
-#import "PhotoCollectionViewCell.h"
+#import "PhotosTableViewCell.h"
 
-@interface PhotosViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface PhotosViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *photos;
 @property (copy, nonatomic) NSString *filePath;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation PhotosViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
+
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     [self setupUserDirectory];
     [self prepareData];
-
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)setupUserDirectory
@@ -90,12 +85,6 @@ static NSString * const reuseIdentifier = @"Cell";
     }
 }
 
-- (IBAction)photo:(id)sender
-{
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"Select Source" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo Library", nil];
-    [actionSheet showFromBarButtonItem:sender animated:YES];
-}
-
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex < 2)
@@ -134,22 +123,30 @@ static NSString * const reuseIdentifier = @"Cell";
     NSData *encryptedImage = [RNEncryptor encryptData:imageData withSettings:kRNCryptorAES256Settings password:@"A_SECRET_PASSWORD" error:nil];
     [encryptedImage writeToFile:[self.filePath stringByAppendingPathComponent:imageName] atomically:YES];
     [self.photos addObject:image];
-    [self.collectionView reloadData];
+    [self.tableView reloadData];
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.photos ? self.photos.count : 0;
+    return self.photos.count; //self.photos ? self.photos.count : 0;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
-    cell.imageView.image = [self.photos objectAtIndex:indexPath.row];
+    PhotosTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+
+    cell.secretImage.image = [self.photos objectAtIndex:indexPath.row];
+
     return cell;
+}
+
+- (IBAction)onTakePhotoButtonPressed:(id)sender
+{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"Select Source" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo Library", nil];
+    [actionSheet showFromBarButtonItem:sender animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

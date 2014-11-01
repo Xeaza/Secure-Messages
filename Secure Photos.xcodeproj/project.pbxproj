@@ -16,7 +16,6 @@
 		345BB0991A041FFE0056330A /* Secure_PhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0981A041FFE0056330A /* Secure_PhotosTests.m */; };
 		345BB0A31A04205F0056330A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BB0A21A04205F0056330A /* MobileCoreServices.framework */; };
 		345BB1451A0424E20056330A /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1441A0424E20056330A /* PhotosViewController.m */; };
-		345BB1481A0425280056330A /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1471A0425280056330A /* PhotoCollectionViewCell.m */; };
 		345BB1541A042C2E0056330A /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB14D1A042C2E0056330A /* RNCryptor.m */; };
 		345BB1551A042C2E0056330A /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB14F1A042C2E0056330A /* RNCryptorEngine.m */; };
 		345BB1561A042C2E0056330A /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1511A042C2E0056330A /* RNDecryptor.m */; };
@@ -24,6 +23,7 @@
 		345BB15F1A042C410056330A /* SSKeychain.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345BB1591A042C410056330A /* SSKeychain.strings */; };
 		345BB1601A042C410056330A /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB15C1A042C410056330A /* SSKeychain.m */; };
 		345BB1611A042C410056330A /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB15E1A042C410056330A /* SSKeychainQuery.m */; };
+		345BB1641A043CBD0056330A /* PhotosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1631A043CBD0056330A /* PhotosTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,6 @@
 		345BB0A21A04205F0056330A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		345BB1431A0424E20056330A /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
 		345BB1441A0424E20056330A /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
-		345BB1461A0425280056330A /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
-		345BB1471A0425280056330A /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		345BB14A1A042C2E0056330A /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
 		345BB14B1A042C2E0056330A /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
 		345BB14C1A042C2E0056330A /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		345BB15C1A042C410056330A /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		345BB15D1A042C410056330A /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
 		345BB15E1A042C410056330A /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		345BB1621A043CBD0056330A /* PhotosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTableViewCell.h; sourceTree = "<group>"; };
+		345BB1631A043CBD0056330A /* PhotosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 				345BB0841A041FFE0056330A /* ViewController.m */,
 				345BB1431A0424E20056330A /* PhotosViewController.h */,
 				345BB1441A0424E20056330A /* PhotosViewController.m */,
-				345BB1461A0425280056330A /* PhotoCollectionViewCell.h */,
-				345BB1471A0425280056330A /* PhotoCollectionViewCell.m */,
+				345BB1621A043CBD0056330A /* PhotosTableViewCell.h */,
+				345BB1631A043CBD0056330A /* PhotosTableViewCell.m */,
 				345BB0861A041FFE0056330A /* Main.storyboard */,
 				345BB0891A041FFE0056330A /* Images.xcassets */,
 				345BB08B1A041FFE0056330A /* LaunchScreen.xib */,
@@ -290,11 +290,11 @@
 				345BB1551A042C2E0056330A /* RNCryptorEngine.m in Sources */,
 				345BB1611A042C410056330A /* SSKeychainQuery.m in Sources */,
 				345BB0851A041FFE0056330A /* ViewController.m in Sources */,
-				345BB1481A0425280056330A /* PhotoCollectionViewCell.m in Sources */,
 				345BB0821A041FFE0056330A /* AppDelegate.m in Sources */,
 				345BB1561A042C2E0056330A /* RNDecryptor.m in Sources */,
 				345BB1451A0424E20056330A /* PhotosViewController.m in Sources */,
 				345BB1571A042C2E0056330A /* RNEncryptor.m in Sources */,
+				345BB1641A043CBD0056330A /* PhotosTableViewCell.m in Sources */,
 				345BB07F1A041FFE0056330A /* main.m in Sources */,
 				345BB1541A042C2E0056330A /* RNCryptor.m in Sources */,
 				345BB1601A042C410056330A /* SSKeychain.m in Sources */,

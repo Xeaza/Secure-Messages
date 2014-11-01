@@ -1,5 +1,5 @@
 //
-//  PhotoCollectionViewCell.h
+//  PhotosTableViewCell.h
 //  Secure Photos
 //
 //  Created by Taylor Wright-Sanson on 10/31/14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoCollectionViewCell : UICollectionViewCell
+@interface PhotosTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *secretImage;
 
 @end

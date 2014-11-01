@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotosViewController : UICollectionViewController
+@interface PhotosViewController : UIViewController
 
 @property (copy, nonatomic) NSString *username;
 
-- (IBAction)photo:(id)sender;
+
 
 @end
