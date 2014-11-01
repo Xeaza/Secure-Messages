@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		3425E4691A0595E600E16CCB /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425E4681A0595E600E16CCB /* ColorUtils.m */; };
+		3425E46C1A05A8EC00E16CCB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E46A1A05A8EC00E16CCB /* Bolts.framework */; };
+		3425E46D1A05A8EC00E16CCB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E46B1A05A8EC00E16CCB /* Parse.framework */; };
+		3425E46F1A05A94E00E16CCB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E46E1A05A94E00E16CCB /* AudioToolbox.framework */; };
+		3425E4711A05A95D00E16CCB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4701A05A95D00E16CCB /* CFNetwork.framework */; };
+		3425E4791A05A9C900E16CCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4721A05A9C900E16CCB /* CoreGraphics.framework */; };
+		3425E47A1A05A9C900E16CCB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4731A05A9C900E16CCB /* CoreLocation.framework */; };
+		3425E47B1A05A9C900E16CCB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4741A05A9C900E16CCB /* libz.dylib */; };
+		3425E47C1A05A9C900E16CCB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4751A05A9C900E16CCB /* QuartzCore.framework */; };
+		3425E47D1A05A9C900E16CCB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4761A05A9C900E16CCB /* Security.framework */; };
+		3425E47E1A05A9C900E16CCB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4771A05A9C900E16CCB /* StoreKit.framework */; };
+		3425E47F1A05A9C900E16CCB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3425E4781A05A9C900E16CCB /* SystemConfiguration.framework */; };
 		345BB07F1A041FFE0056330A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB07E1A041FFE0056330A /* main.m */; };
 		345BB0821A041FFE0056330A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0811A041FFE0056330A /* AppDelegate.m */; };
 		345BB0851A041FFE0056330A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0841A041FFE0056330A /* ViewController.m */; };
@@ -40,6 +51,17 @@
 /* Begin PBXFileReference section */
 		3425E4671A0595E600E16CCB /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
 		3425E4681A0595E600E16CCB /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
+		3425E46A1A05A8EC00E16CCB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		3425E46B1A05A8EC00E16CCB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		3425E46E1A05A94E00E16CCB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3425E4701A05A95D00E16CCB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3425E4721A05A9C900E16CCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3425E4731A05A9C900E16CCB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3425E4741A05A9C900E16CCB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3425E4751A05A9C900E16CCB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3425E4761A05A9C900E16CCB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3425E4771A05A9C900E16CCB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3425E4781A05A9C900E16CCB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		345BB0791A041FFE0056330A /* Secure Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secure Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		345BB07D1A041FFE0056330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345BB07E1A041FFE0056330A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,7 +102,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3425E4791A05A9C900E16CCB /* CoreGraphics.framework in Frameworks */,
+				3425E47A1A05A9C900E16CCB /* CoreLocation.framework in Frameworks */,
+				3425E47B1A05A9C900E16CCB /* libz.dylib in Frameworks */,
+				3425E47C1A05A9C900E16CCB /* QuartzCore.framework in Frameworks */,
+				3425E47D1A05A9C900E16CCB /* Security.framework in Frameworks */,
+				3425E47E1A05A9C900E16CCB /* StoreKit.framework in Frameworks */,
+				3425E47F1A05A9C900E16CCB /* SystemConfiguration.framework in Frameworks */,
+				3425E4711A05A95D00E16CCB /* CFNetwork.framework in Frameworks */,
+				3425E46F1A05A94E00E16CCB /* AudioToolbox.framework in Frameworks */,
 				345BB0A31A04205F0056330A /* MobileCoreServices.framework in Frameworks */,
+				3425E46D1A05A8EC00E16CCB /* Parse.framework in Frameworks */,
+				3425E46C1A05A8EC00E16CCB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +179,17 @@
 				3425E4661A0595E600E16CCB /* ColorUtils */,
 				345BB1581A042C410056330A /* SSKeychain */,
 				345BB1491A042C2E0056330A /* RNCryptor */,
+				3425E4721A05A9C900E16CCB /* CoreGraphics.framework */,
+				3425E4731A05A9C900E16CCB /* CoreLocation.framework */,
+				3425E4741A05A9C900E16CCB /* libz.dylib */,
+				3425E4751A05A9C900E16CCB /* QuartzCore.framework */,
+				3425E4761A05A9C900E16CCB /* Security.framework */,
+				3425E4771A05A9C900E16CCB /* StoreKit.framework */,
+				3425E4781A05A9C900E16CCB /* SystemConfiguration.framework */,
+				3425E4701A05A95D00E16CCB /* CFNetwork.framework */,
+				3425E46E1A05A94E00E16CCB /* AudioToolbox.framework */,
+				3425E46A1A05A8EC00E16CCB /* Bolts.framework */,
+				3425E46B1A05A8EC00E16CCB /* Parse.framework */,
 				345BB0A21A04205F0056330A /* MobileCoreServices.framework */,
 				345BB07D1A041FFE0056330A /* Info.plist */,
 				345BB07E1A041FFE0056330A /* main.m */,
@@ -441,6 +485,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Secure",
+					Photos,
+				);
 				INFOPLIST_FILE = "Secure Photos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,6 +500,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Secure",
+					Photos,
+				);
 				INFOPLIST_FILE = "Secure Photos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
