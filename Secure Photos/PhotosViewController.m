@@ -12,12 +12,14 @@
 #import "RNDecryptor.h"
 #import "RNEncryptor.h"
 #import "PhotosTableViewCell.h"
+#import "ColorUtils.h"
 
 @interface PhotosViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) NSMutableArray *photos;
 @property (copy, nonatomic) NSString *filePath;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property BOOL colorSwap;
 
 @end
 
@@ -31,6 +33,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     [self setupUserDirectory];
     [self prepareData];
+    self.colorSwap = YES;
 }
 
 - (void)setupUserDirectory
@@ -137,7 +140,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PhotosTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-
+    if (self.colorSwap)
+    {
+        cell.backgroundColor = [UIColor colorWithString:@"3579AA"];
+        self.colorSwap = NO;
+    }
+    else
+    {
+        cell.backgroundColor = [UIColor colorWithString:@"36AA95"];
+        self.colorSwap = YES;
+    }
     cell.secretImage.image = [self.photos objectAtIndex:indexPath.row];
 
     return cell;

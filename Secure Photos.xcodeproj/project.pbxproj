@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3425E4691A0595E600E16CCB /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3425E4681A0595E600E16CCB /* ColorUtils.m */; };
 		345BB07F1A041FFE0056330A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB07E1A041FFE0056330A /* main.m */; };
 		345BB0821A041FFE0056330A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0811A041FFE0056330A /* AppDelegate.m */; };
 		345BB0851A041FFE0056330A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB0841A041FFE0056330A /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3425E4671A0595E600E16CCB /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
+		3425E4681A0595E600E16CCB /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
 		345BB0791A041FFE0056330A /* Secure Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Secure Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		345BB07D1A041FFE0056330A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		345BB07E1A041FFE0056330A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3425E4661A0595E600E16CCB /* ColorUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3425E4671A0595E600E16CCB /* ColorUtils.h */,
+				3425E4681A0595E600E16CCB /* ColorUtils.m */,
+			);
+			path = ColorUtils;
+			sourceTree = "<group>";
+		};
 		345BB0701A041FFE0056330A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 		345BB07C1A041FFE0056330A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3425E4661A0595E600E16CCB /* ColorUtils */,
 				345BB1581A042C410056330A /* SSKeychain */,
 				345BB1491A042C2E0056330A /* RNCryptor */,
 				345BB0A21A04205F0056330A /* MobileCoreServices.framework */,
@@ -290,6 +303,7 @@
 				345BB1551A042C2E0056330A /* RNCryptorEngine.m in Sources */,
 				345BB1611A042C410056330A /* SSKeychainQuery.m in Sources */,
 				345BB0851A041FFE0056330A /* ViewController.m in Sources */,
+				3425E4691A0595E600E16CCB /* ColorUtils.m in Sources */,
 				345BB0821A041FFE0056330A /* AppDelegate.m in Sources */,
 				345BB1561A042C2E0056330A /* RNDecryptor.m in Sources */,
 				345BB1451A0424E20056330A /* PhotosViewController.m in Sources */,
@@ -496,6 +510,7 @@
 				345BB09E1A041FFE0056330A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		345BB09F1A041FFE0056330A /* Build configuration list for PBXNativeTarget "Secure PhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				345BB0A11A041FFE0056330A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

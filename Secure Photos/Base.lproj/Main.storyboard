@@ -78,29 +78,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="131" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QNN-A2-4ke">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="358" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QNN-A2-4ke">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="131" id="o3p-5M-XwP" customClass="PhotosTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="358" id="o3p-5M-XwP" customClass="PhotosTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3p-5M-XwP" id="Qmw-6k-KhI">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-hM-7mX">
-                                                    <rect key="frame" x="218" y="0.0" width="165" height="130.5"/>
+                                                    <rect key="frame" x="74" y="-1" width="453" height="358"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="130.5" id="KwP-eB-ebZ"/>
-                                                        <constraint firstAttribute="width" constant="165" id="V6p-LB-ZmT"/>
+                                                        <constraint firstAttribute="height" constant="358" id="KwP-eB-ebZ"/>
+                                                        <constraint firstAttribute="width" constant="453" id="V6p-LB-ZmT"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="qTf-hM-7mX" secondAttribute="centerX" id="1Fk-V6-phr"/>
-                                                <constraint firstItem="qTf-hM-7mX" firstAttribute="top" secondItem="Qmw-6k-KhI" secondAttribute="top" id="LLq-J7-LvQ"/>
+                                                <constraint firstItem="qTf-hM-7mX" firstAttribute="top" secondItem="Qmw-6k-KhI" secondAttribute="top" constant="-1" id="LLq-J7-LvQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.10542759043928696" green="0.66116532551421581" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="secretImage" destination="qTf-hM-7mX" id="q6f-oG-WLf"/>
                                         </connections>
