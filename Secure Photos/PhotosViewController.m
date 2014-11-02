@@ -167,7 +167,7 @@
             NSLog(@"Encrypted Image Uploaded");
         }
     }];
-    
+
 //    [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
 //        if (error) {
 //            NSLog(@"Error: %@", error.userInfo);
