@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +20,11 @@
 {
     AppDelegate *applicationDeleagte = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [applicationDeleagte setNavigationController:self.navigationController];
+
+    [Parse setApplicationId:@"6SqqNExza0BHe2xrMj0fouDkzqx6fqRgryutJ82m"
+                  clientKey:@"i2ZMavxHZFosWZmDLqfUvwEVy5RnC3b94Uvhod5g"];
+
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
     return YES;
 }

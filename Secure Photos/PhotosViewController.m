@@ -13,6 +13,7 @@
 #import "RNEncryptor.h"
 #import "PhotosTableViewCell.h"
 #import "ColorUtils.h"
+#import <Parse/Parse.h>
 
 @interface PhotosViewController () <UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITableViewDelegate, UITableViewDataSource>
 
@@ -64,6 +65,31 @@
     NSError *error = nil;
     NSArray *contents = [fileManager contentsOfDirectoryAtPath:self.filePath error:&error];
 
+    PFQuery *query = [PFQuery queryWithClassName:@"Message"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+     {
+         if (error) {
+             NSLog(@"Error: %@", error.userInfo);
+         }
+         else {
+             PFObject *message = objects.firstObject;
+             PFFile *userImageFile = message[@"imageFile"];
+             [userImageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+                 if (error) {
+                     NSLog(@"Error getting secure image data %@", error);
+                 }
+                 else
+                 {
+                     NSData *decryptedData = [RNDecryptor decryptData:imageData withSettings:kRNCryptorAES256Settings password:@"A_SECRET_PASSWORD" error:nil];
+                     UIImage *image = [UIImage imageWithData:decryptedData];
+                     [self.photos addObject:image];
+                     [self.tableView reloadData];
+                 }
+             }];
+         }
+     }];
+
+    /* // Code to get Images from File System
     if ([contents count] && !error){
         NSLog(@"Contents of the user's directory. %@", contents);
 
@@ -86,6 +112,7 @@
             NSLog(@"The user's directory is empty.");
         }
     }
+     */
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -125,6 +152,34 @@
     NSString *imageName = [NSString stringWithFormat:@"image-%lu.securedData", self.photos.count + 1];
     NSData *encryptedImage = [RNEncryptor encryptData:imageData withSettings:kRNCryptorAES256Settings password:@"A_SECRET_PASSWORD" error:nil];
     [encryptedImage writeToFile:[self.filePath stringByAppendingPathComponent:imageName] atomically:YES];
+
+    PFFile *messageFile = [PFFile fileWithData:encryptedImage];
+
+    PFObject *message = [PFObject objectWithClassName:@"Message"];
+    message[@"imageName"] = @"Super Secrete Stuff!";
+    message[@"imageFile"] = messageFile;
+
+    [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error.userInfo);
+        }
+        else {
+            NSLog(@"Encrypted Image Uploaded");
+        }
+    }];
+    
+//    [message saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (error) {
+//            NSLog(@"Error: %@", error.userInfo);
+//        }
+//        else {
+//            NSLog(@"Encrypted Image Uploaded");
+//        }
+//    } progressBlock:^(int percentDone) {
+//        NSLog(@"Percent uploaded: %d", percentDone);
+//
+//    }];
+
     [self.photos addObject:image];
     [self.tableView reloadData];
     [picker dismissViewControllerAnimated:YES completion:nil];
