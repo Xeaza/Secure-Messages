@@ -5,6 +5,61 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="5Hc-ke-UCP">
+            <objects>
+                <viewController id="uiX-hm-srS" customClass="loginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWz-z8-eDG"/>
+                        <viewControllerLayoutGuide type="bottom" id="XCi-3K-rSQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QyC-7D-izI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXa-8Q-ikg">
+                                <rect key="frame" x="194" y="44" width="212" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FBi-Pb-yZF"/>
+                                    <constraint firstAttribute="width" constant="212" id="eMY-Vc-2B8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-4j-DwP">
+                                <rect key="frame" x="194" y="82" width="212" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AGb-KD-i24"/>
+                                    <constraint firstAttribute="width" constant="212" id="NTm-De-EkC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Rj-Q8-iND">
+                                <rect key="frame" x="194" y="120" width="212" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8EA-8K-gHz"/>
+                                    <constraint firstAttribute="width" constant="212" id="xvr-Fo-alS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NXa-8Q-ikg" firstAttribute="top" secondItem="fWz-z8-eDG" secondAttribute="bottom" constant="24" id="90s-t8-NgA"/>
+                            <constraint firstAttribute="centerX" secondItem="6Rj-Q8-iND" secondAttribute="centerX" id="CVf-GH-G5o"/>
+                            <constraint firstItem="6Rj-Q8-iND" firstAttribute="top" secondItem="g0o-4j-DwP" secondAttribute="bottom" constant="8" id="EfQ-dZ-ofb"/>
+                            <constraint firstItem="g0o-4j-DwP" firstAttribute="top" secondItem="NXa-8Q-ikg" secondAttribute="bottom" constant="8" id="VTe-eY-yGw"/>
+                            <constraint firstAttribute="centerX" secondItem="NXa-8Q-ikg" secondAttribute="centerX" id="foj-uq-3Ng"/>
+                            <constraint firstAttribute="centerX" secondItem="g0o-4j-DwP" secondAttribute="centerX" id="oFv-gc-noR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0x1-jX-F13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="325"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -60,6 +115,7 @@
                         <outlet property="passwordTextField" destination="CjZ-us-vYT" id="sdb-BA-dpT"/>
                         <outlet property="usernameTextField" destination="4gL-Mh-iKr" id="rvY-My-XW9"/>
                         <segue destination="Zwj-un-Odw" kind="show" identifier="photosViewController" id="qhw-6g-UFJ"/>
+                        <segue destination="uiX-hm-srS" kind="presentation" identifier="ShowLoginSegue" id="YEn-KE-FPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

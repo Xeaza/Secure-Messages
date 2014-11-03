@@ -10,6 +10,7 @@
 #import "SSKeychain.h"
 #import "AppDelegate.h"
 #import "PhotosViewController.h"
+#import <Parse/Parse.h>
 
 @interface ViewController () <UIAlertViewDelegate>
 
@@ -17,14 +18,25 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"The current user is: %@", currentUser.username);
+        //[self.tabBarController.tabBar setHidden:NO];
+        //[self getMyfollowersImages];
+
+    }
+    else {
+        [self performSegueWithIdentifier:@"ShowLoginSegue" sender:self];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 - (IBAction)onLoginButtonPressed:(id)sender
@@ -77,7 +89,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     PhotosViewController *photosViewController = segue.destinationViewController;
-    photosViewController.username = self.usernameTextField.text;
+    //photosViewController.username = self.usernameTextField.text;
     self.passwordTextField.text = nil;
 }
 
