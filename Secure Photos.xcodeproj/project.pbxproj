@@ -36,7 +36,7 @@
 		345BB1601A042C410056330A /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB15C1A042C410056330A /* SSKeychain.m */; };
 		345BB1611A042C410056330A /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB15E1A042C410056330A /* SSKeychainQuery.m */; };
 		345BB1641A043CBD0056330A /* PhotosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1631A043CBD0056330A /* PhotosTableViewCell.m */; };
-		3487E2341A06DDB000779C96 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3487E2331A06DDB000779C96 /* Parse.framework */; };
+		34D1B9311A07CC2F00C0C15F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D1B9301A07CC2F00C0C15F /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +97,7 @@
 		345BB15E1A042C410056330A /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		345BB1621A043CBD0056330A /* PhotosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTableViewCell.h; sourceTree = "<group>"; };
 		345BB1631A043CBD0056330A /* PhotosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTableViewCell.m; sourceTree = "<group>"; };
-		3487E2331A06DDB000779C96 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		34D1B9301A07CC2F00C0C15F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 				3425E4711A05A95D00E16CCB /* CFNetwork.framework in Frameworks */,
 				3425E46F1A05A94E00E16CCB /* AudioToolbox.framework in Frameworks */,
 				345BB0A31A04205F0056330A /* MobileCoreServices.framework in Frameworks */,
-				3487E2341A06DDB000779C96 /* Parse.framework in Frameworks */,
+				34D1B9311A07CC2F00C0C15F /* Parse.framework in Frameworks */,
 				3425E46C1A05A8EC00E16CCB /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,10 +181,10 @@
 		345BB07C1A041FFE0056330A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34D1B9301A07CC2F00C0C15F /* Parse.framework */,
 				3425E4661A0595E600E16CCB /* ColorUtils */,
 				345BB1581A042C410056330A /* SSKeychain */,
 				345BB1491A042C2E0056330A /* RNCryptor */,
-				3487E2331A06DDB000779C96 /* Parse.framework */,
 				3425E4721A05A9C900E16CCB /* CoreGraphics.framework */,
 				3425E4731A05A9C900E16CCB /* CoreLocation.framework */,
 				3425E4741A05A9C900E16CCB /* libz.dylib */,
@@ -497,6 +497,8 @@
 					Photos,
 					"$(PROJECT_DIR)/Secure",
 					Photos,
+					"$(PROJECT_DIR)/Secure",
+					Photos,
 				);
 				INFOPLIST_FILE = "Secure Photos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +512,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Secure",
+					Photos,
 					"$(PROJECT_DIR)/Secure",
 					Photos,
 					"$(PROJECT_DIR)/Secure",

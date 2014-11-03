@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 
-@interface PendingPartners : PFObject
+@interface PendingPartners : PFObject <PFSubclassing>
+
+@property PFUser *user;
+@property NSString *partnersEmail;
 
 @end
