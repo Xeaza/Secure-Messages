@@ -37,6 +37,7 @@
 		345BB1611A042C410056330A /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB15E1A042C410056330A /* SSKeychainQuery.m */; };
 		345BB1641A043CBD0056330A /* PhotosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 345BB1631A043CBD0056330A /* PhotosTableViewCell.m */; };
 		34D1B9311A07CC2F00C0C15F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D1B9301A07CC2F00C0C15F /* Parse.framework */; };
+		34D1B9341A07D04400C0C15F /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B9331A07D04400C0C15F /* loginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		345BB1621A043CBD0056330A /* PhotosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTableViewCell.h; sourceTree = "<group>"; };
 		345BB1631A043CBD0056330A /* PhotosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTableViewCell.m; sourceTree = "<group>"; };
 		34D1B9301A07CC2F00C0C15F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		34D1B9321A07D04400C0C15F /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		34D1B9331A07D04400C0C15F /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				345BB0811A041FFE0056330A /* AppDelegate.m */,
 				345BB0831A041FFE0056330A /* ViewController.h */,
 				345BB0841A041FFE0056330A /* ViewController.m */,
+				34D1B9321A07D04400C0C15F /* loginViewController.h */,
+				34D1B9331A07D04400C0C15F /* loginViewController.m */,
 				345BB1431A0424E20056330A /* PhotosViewController.h */,
 				345BB1441A0424E20056330A /* PhotosViewController.m */,
 				345BB1621A043CBD0056330A /* PhotosTableViewCell.h */,
@@ -359,6 +364,7 @@
 				345BB1571A042C2E0056330A /* RNEncryptor.m in Sources */,
 				345BB1641A043CBD0056330A /* PhotosTableViewCell.m in Sources */,
 				345BB07F1A041FFE0056330A /* main.m in Sources */,
+				34D1B9341A07D04400C0C15F /* loginViewController.m in Sources */,
 				345BB1541A042C2E0056330A /* RNCryptor.m in Sources */,
 				345BB1601A042C410056330A /* SSKeychain.m in Sources */,
 				34060F4C1A06D6A90051C89F /* PendingPartners.m in Sources */,

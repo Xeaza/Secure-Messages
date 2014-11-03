@@ -7,6 +7,7 @@
 //
 
 #import "PendingPartners.h"
+#import <Parse/PFObject+Subclass.h>
 
 @implementation PendingPartners
 
