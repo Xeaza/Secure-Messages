@@ -20,6 +20,14 @@
 
 - (void)viewDidLoad
 {
+
+    // TODO
+    // Get login scren to send email to partner
+    // Make a second screen where user can add the email of their partner
+    // Make that send an email inviting the partner to signup.
+    // Connect the two partners online when the user signs up
+    // https://www.parse.com/questions/connect-with-a-single-user-via-email
+
     [super viewDidLoad];
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
